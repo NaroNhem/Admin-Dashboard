@@ -49,15 +49,20 @@ body {
     display: grid;
     grid-column: 2 / 7;
     background-color: white;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 6px 6px 8px #b5b5b5;
 }
 
 .searchbar {
     display: flex;
-    grid-column: 2/3;
-    grid-row: 2;
+    grid-column: 1/4;
+    grid-row: 1;
     min-width: 40vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
 }
 
 #search {
@@ -70,7 +75,115 @@ body {
 }
 
 .right-icons {
-    grid-column: 4;
-    grid-row: 2;
+    display: flex;
+    grid-column: 5;
+    grid-row: 1;
+    align-items: center;
+    justify-content: end;
 }
 
+.profileRight {
+    display: flex;
+    align-items: center;
+    grid-column: 6;
+    grid-row: 1;
+    justify-content: center ;
+}
+.name {
+    display: flex;
+    font-size: 9px;
+    grid-column: 7;
+    justify-content: start;
+    align-items: center;
+}
+.imgRight {
+    height: 3rem;
+    width: 3rem;
+    background-color: salmon;
+    border-radius: 50px;
+}
+
+.greet {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2/3;
+    grid-row: 2;
+    justify-content: start;
+    align-items: center;
+}
+.greet, h4, p {
+    margin: 0;
+}
+
+.greet, h4 {
+    font-size: 22px;
+}
+.btmpic {
+    display: flex;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 2;
+    padding: 12px;
+    padding-top: 0;
+}
+
+.imgbtm {
+    height: 5rem;
+    width: 5rem;
+    background-color: salmon;
+    border-radius: 50px;
+    
+}
+.bottomIcons{
+    grid-column: 5/8;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(53, 138, 236);
+    color: white;
+}
+
+.projects {
+    display: grid;
+    grid-column: 2/ 5;
+    grid-row: 2/7;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    gap: 25px;
+}
+.card {
+    border-radius: 30px;
+    background: #61c0ef;
+    box-shadow:  14px 16px 20px #407f98;
+    width: 400px;
+    height: 200px;
+    border-left:5px solid salmon ;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    margin-left: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1 / 4;
+}
